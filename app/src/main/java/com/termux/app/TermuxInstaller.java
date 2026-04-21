@@ -222,6 +222,47 @@ final class TermuxInstaller {
 // ===== ДОБАВЛЯЕМ РЕПОЗИТОРИЙ XUNKAL1 =====
 try {
     File sourcesDir = new File(TERMUX_PREFIX_DIR, "etc/apt/sources.list.d");
+    if (!sourcesDir.exists()) sourcesDir.mkdirs();
+    
+    File repoFile = new File(sourcesDir, "xunkal1.list");
+    if (!repoFile.exists()) {
+        FileWriter writer = new FileWriter(repoFile);
+        writer.write("deb [trusted=yes] https://xunkal1-repo.vercel.app/repo termux extras\n");
+        writer.close();
+        Logger.logInfo(LOG_TAG, "XunKal1 repository added");
+    }
+} catch (Exception e) {
+    Logger.logError(LOG_TAG, "Failed to add repo\n" + e.getMessage());
+}
+
+// ===== МЕНЯЕМ ПРИВЕТСТВИЕ =====
+try {
+    File motdFile = new File(TERMUX_PREFIX_DIR, "etc/motd");
+    if (motdFile.exists()) {
+        FileWriter motdWriter = new FileWriter(motdFile);
+        motdWriter.write(
+            "\n╔════════════════════════════════════════════════════════════╗\n" +
+            "║                    XunKal1 Terminal                        ║\n" +
+            "╠════════════════════════════════════════════════════════════╣\n" +
+            "║  Docs:    github.com/Hinderchik/XunKal1-termux            ║\n" +
+            "║  Repo:    xunkal1-repo.vercel.app                         ║\n" +
+            "║  Install: pkg install claude-cli                          ║\n" +
+            "╚════════════════════════════════════════════════════════════╝\n"
+        );
+        motdWriter.close();
+        Logger.logInfo(LOG_TAG, "XunKal1 motd installed");
+    }
+} catch (Exception e) {
+    Logger.logError(LOG_TAG, "Failed to replace motd\n" + e.getMessage());
+}
+// ===== КОНЕЦ БЛОКОВ =====
+
+// Recreate env file since termux prefix was wiped earlier
+TermuxShellEnvironment.writeEnvironmentToFile(activity);
+
+// ===== ДОБАВЛЯЕМ РЕПОЗИТОРИЙ XUNKAL1 =====
+try {
+    File sourcesDir = new File(TERMUX_PREFIX_DIR, "etc/apt/sources.list.d");
     if (!sourcesDir.exists()) {
         sourcesDir.mkdirs();
     }
