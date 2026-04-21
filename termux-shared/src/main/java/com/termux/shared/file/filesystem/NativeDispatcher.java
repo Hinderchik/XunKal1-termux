@@ -1,4 +1,4 @@
-package com.termux.shared.file.filesystem;
+package com.xunkal1.termux.shared.file.filesystem;
 
 import android.system.ErrnoException;
 import android.system.Os;

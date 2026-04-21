@@ -1,4 +1,4 @@
-package com.termux.shared.data;
+package com.xunkal1.termux.shared.data;
 
 import android.os.Bundle;
 

@@ -1,4 +1,4 @@
-package com.termux.app;
+package com.xunkal1.termux.app;
 
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
@@ -13,13 +13,13 @@ import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
 import android.webkit.MimeTypeMap;
 
-import com.termux.shared.termux.plugins.TermuxPluginUtils;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.data.IntentUtils;
-import com.termux.shared.net.uri.UriUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.net.uri.UriScheme;
-import com.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.termux.plugins.TermuxPluginUtils;
+import com.xunkal1.termux.shared.data.DataUtils;
+import com.xunkal1.termux.shared.data.IntentUtils;
+import com.xunkal1.termux.shared.net.uri.UriUtils;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.net.uri.UriScheme;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
 
 import java.io.File;
 import java.io.FileNotFoundException;

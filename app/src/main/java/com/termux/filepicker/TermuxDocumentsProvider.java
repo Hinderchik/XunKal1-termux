@@ -1,4 +1,4 @@
-package com.termux.filepicker;
+package com.xunkal1.termux.filepicker;
 
 import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
@@ -11,8 +11,8 @@ import android.provider.DocumentsContract.Root;
 import android.provider.DocumentsProvider;
 import android.webkit.MimeTypeMap;
 
-import com.termux.R;
-import com.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.R;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
 
 import java.io.File;
 import java.io.FileNotFoundException;

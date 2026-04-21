@@ -1,4 +1,4 @@
-package com.termux.terminal;
+package com.xunkal1.termux.terminal;
 
 import android.util.Log;
 

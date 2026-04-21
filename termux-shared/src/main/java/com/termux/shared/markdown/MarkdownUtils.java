@@ -1,4 +1,4 @@
-package com.termux.shared.markdown;
+package com.xunkal1.termux.shared.markdown;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -16,8 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
 import com.google.common.base.Strings;
-import com.termux.shared.R;
-import com.termux.shared.theme.ThemeUtils;
+import com.xunkal1.termux.shared.R;
+import com.xunkal1.termux.shared.theme.ThemeUtils;
 
 import org.commonmark.ext.gfm.strikethrough.Strikethrough;
 import org.commonmark.node.BlockQuote;

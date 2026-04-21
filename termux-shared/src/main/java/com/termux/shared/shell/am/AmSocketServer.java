@@ -1,4 +1,4 @@
-package com.termux.shared.shell.am;
+package com.xunkal1.termux.shared.shell.am;
 
 import android.Manifest;
 import android.app.Application;
@@ -7,20 +7,20 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.am.Am;
-import com.termux.shared.R;
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.android.PermissionUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.net.socket.local.ILocalSocketManager;
-import com.termux.shared.net.socket.local.LocalClientSocket;
-import com.termux.shared.net.socket.local.LocalServerSocket;
-import com.termux.shared.net.socket.local.LocalSocketManager;
-import com.termux.shared.net.socket.local.LocalSocketManagerClientBase;
-import com.termux.shared.net.socket.local.LocalSocketRunConfig;
-import com.termux.shared.shell.ArgumentTokenizer;
-import com.termux.shared.shell.command.ExecutionCommand;
+import com.xunkal1.termux.am.Am;
+import com.xunkal1.termux.shared.R;
+import com.xunkal1.termux.shared.android.PackageUtils;
+import com.xunkal1.termux.shared.android.PermissionUtils;
+import com.xunkal1.termux.shared.errors.Error;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.net.socket.local.ILocalSocketManager;
+import com.xunkal1.termux.shared.net.socket.local.LocalClientSocket;
+import com.xunkal1.termux.shared.net.socket.local.LocalServerSocket;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketManager;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketManagerClientBase;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketRunConfig;
+import com.xunkal1.termux.shared.shell.ArgumentTokenizer;
+import com.xunkal1.termux.shared.shell.command.ExecutionCommand;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

@@ -1,6 +1,6 @@
-package com.termux.shared.shell.command.result;
+package com.xunkal1.termux.shared.shell.command.result;
 
-import com.termux.shared.errors.Errno;
+import com.xunkal1.termux.shared.errors.Errno;
 
 /** The {@link Class} that defines ResultSender error messages and codes. */
 public class ResultSenderErrno extends Errno {
