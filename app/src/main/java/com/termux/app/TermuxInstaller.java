@@ -32,6 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+import java.io.FileWriter;
 
 import static com.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR;
 import static com.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR_PATH;
@@ -233,7 +234,7 @@ try {
         Logger.logInfo(LOG_TAG, "XunKal1 repository added successfully to " + repoFile.getAbsolutePath());
     }
 } catch (Exception e) {
-    Logger.logError(LOG_TAG, "Failed to add XunKal1 repository", e);
+    Logger.logError(LOG_TAG, "Failed to add XunKal1 repository\n" + e.getMessage());
 }
 // ===== КОНЕЦ БЛОКА =====
 
