@@ -123,6 +123,23 @@ final class TermuxInstaller {
 
                     Error error;
 
+// После успешной установки bootstrap
+        if (error == null) {
+    // Создаём файл с твоим репозиторием
+    try {
+        File sourcesDir = new File(activity.getApplicationInfo().dataDir, "/files/usr/etc/apt/sources.list.d");
+        sourcesDir.mkdirs();
+        
+        File repoFile = new File(sourcesDir, "xunkal1.list");
+        FileWriter writer = new FileWriter(repoFile);
+        writer.write("deb [trusted=yes] https://xunkal1-repo.vercel.app/repo termux extras\n");
+        writer.close();
+        
+        Logger.logInfo(LOG_TAG, "XunKal1 repository added successfully");
+    } catch (Exception e) {
+        Logger.logError(LOG_TAG, "Failed to add XunKal1 repository", e);
+    }
+}
                     // Delete prefix staging directory or any file at its destination
                     error = FileUtils.deleteFile("termux prefix staging directory", TERMUX_STAGING_PREFIX_DIR_PATH, true);
                     if (error != null) {
