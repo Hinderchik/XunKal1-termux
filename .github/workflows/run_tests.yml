@@ -3,11 +3,11 @@ name: Unit tests
 on:
   push:
     branches:
-      - master
+      - rebrand-package
       - android-10
   pull_request:
     branches:
-      - master
+      - rebrand-package
       - android-10
 
 jobs:

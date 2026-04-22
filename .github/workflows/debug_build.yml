@@ -3,11 +3,11 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - rebrand-package
       - 'github-releases/**'
   pull_request:
     branches:
-      - master
+      - rebrand-package
 
 jobs:
   build:
