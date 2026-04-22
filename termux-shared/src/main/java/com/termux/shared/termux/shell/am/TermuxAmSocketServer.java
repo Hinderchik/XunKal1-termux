@@ -1,4 +1,4 @@
-package com.termux.shared.termux.shell.am;
+package com.xunkal1.termux.shared.termux.shell.am;
 
 import android.content.Context;
 
@@ -6,21 +6,21 @@ import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.errors.Error;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.net.socket.local.LocalClientSocket;
-import com.termux.shared.net.socket.local.LocalServerSocket;
-import com.termux.shared.net.socket.local.LocalSocketManager;
-import com.termux.shared.net.socket.local.LocalSocketManagerClientBase;
-import com.termux.shared.net.socket.local.LocalSocketRunConfig;
-import com.termux.shared.shell.am.AmSocketServerRunConfig;
-import com.termux.shared.shell.am.AmSocketServer;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.crash.TermuxCrashUtils;
-import com.termux.shared.termux.plugins.TermuxPluginUtils;
-import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
-import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
-import com.termux.shared.termux.shell.command.environment.TermuxAppShellEnvironment;
+import com.xunkal1.termux.shared.errors.Error;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.net.socket.local.LocalClientSocket;
+import com.xunkal1.termux.shared.net.socket.local.LocalServerSocket;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketManager;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketManagerClientBase;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketRunConfig;
+import com.xunkal1.termux.shared.shell.am.AmSocketServerRunConfig;
+import com.xunkal1.termux.shared.shell.am.AmSocketServer;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.termux.crash.TermuxCrashUtils;
+import com.xunkal1.termux.shared.termux.plugins.TermuxPluginUtils;
+import com.xunkal1.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
+import com.xunkal1.termux.shared.termux.settings.properties.TermuxPropertyConstants;
+import com.xunkal1.termux.shared.termux.shell.command.environment.TermuxAppShellEnvironment;
 
 /**
  * A wrapper for {@link AmSocketServer} for termux-app usage.

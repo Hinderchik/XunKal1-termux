@@ -1,4 +1,4 @@
-package com.termux.shared.file.filesystem;
+package com.xunkal1.termux.shared.file.filesystem;
 
 /** The {@link Enum} that defines file types. */
 public enum FileType {

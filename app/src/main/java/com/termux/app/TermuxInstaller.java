@@ -1,4 +1,4 @@
-package com.termux.app;
+package com.xunkal1.termux.app;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,18 +10,18 @@ import android.system.Os;
 import android.util.Pair;
 import android.view.WindowManager;
 
-import com.termux.R;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.termux.crash.TermuxCrashUtils;
-import com.termux.shared.termux.file.TermuxFileUtils;
-import com.termux.shared.interact.MessageDialogUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.android.PackageUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxUtils;
-import com.termux.shared.termux.shell.command.environment.TermuxShellEnvironment;
+import com.xunkal1.termux.R;
+import com.xunkal1.termux.shared.file.FileUtils;
+import com.xunkal1.termux.shared.termux.crash.TermuxCrashUtils;
+import com.xunkal1.termux.shared.termux.file.TermuxFileUtils;
+import com.xunkal1.termux.shared.interact.MessageDialogUtils;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.markdown.MarkdownUtils;
+import com.xunkal1.termux.shared.errors.Error;
+import com.xunkal1.termux.shared.android.PackageUtils;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.termux.TermuxUtils;
+import com.xunkal1.termux.shared.termux.shell.command.environment.TermuxShellEnvironment;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -34,10 +34,10 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.io.FileWriter;
 
-import static com.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR;
-import static com.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR_PATH;
-import static com.termux.shared.termux.TermuxConstants.TERMUX_STAGING_PREFIX_DIR;
-import static com.termux.shared.termux.TermuxConstants.TERMUX_STAGING_PREFIX_DIR_PATH;
+import static com.xunkal1.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR;
+import static com.xunkal1.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR_PATH;
+import static com.xunkal1.termux.shared.termux.TermuxConstants.TERMUX_STAGING_PREFIX_DIR;
+import static com.xunkal1.termux.shared.termux.TermuxConstants.TERMUX_STAGING_PREFIX_DIR_PATH;
 
 /**
  * Install the Termux bootstrap packages if necessary by following the below steps:

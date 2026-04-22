@@ -1,23 +1,23 @@
-package com.termux.shared.termux.file;
+package com.xunkal1.termux.shared.termux.file;
 
-import static com.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR_PATH;
+import static com.xunkal1.termux.shared.termux.TermuxConstants.TERMUX_PREFIX_DIR_PATH;
 
 import android.content.Context;
 import android.os.Environment;
 
 import androidx.annotation.NonNull;
 
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.shell.command.ExecutionCommand;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtilsErrno;
-import com.termux.shared.termux.shell.command.environment.TermuxShellEnvironment;
-import com.termux.shared.shell.command.runner.app.AppShell;
-import com.termux.shared.android.AndroidUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxUtils;
+import com.xunkal1.termux.shared.file.FileUtils;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.markdown.MarkdownUtils;
+import com.xunkal1.termux.shared.shell.command.ExecutionCommand;
+import com.xunkal1.termux.shared.errors.Error;
+import com.xunkal1.termux.shared.file.FileUtilsErrno;
+import com.xunkal1.termux.shared.termux.shell.command.environment.TermuxShellEnvironment;
+import com.xunkal1.termux.shared.shell.command.runner.app.AppShell;
+import com.xunkal1.termux.shared.android.AndroidUtils;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.termux.TermuxUtils;
 
 import java.io.File;
 import java.util.ArrayList;

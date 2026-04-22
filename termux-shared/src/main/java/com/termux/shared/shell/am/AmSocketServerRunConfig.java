@@ -1,13 +1,13 @@
-package com.termux.shared.shell.am;
+package com.xunkal1.termux.shared.shell.am;
 
 import android.Manifest;
 
 import androidx.annotation.NonNull;
 
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.net.socket.local.ILocalSocketManager;
-import com.termux.shared.net.socket.local.LocalSocketRunConfig;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.markdown.MarkdownUtils;
+import com.xunkal1.termux.shared.net.socket.local.ILocalSocketManager;
+import com.xunkal1.termux.shared.net.socket.local.LocalSocketRunConfig;
 
 import java.io.Serializable;
 

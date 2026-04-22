@@ -1,14 +1,14 @@
-package com.termux.shared.termux.shell;
+package com.xunkal1.termux.shared.termux.shell;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.filesystem.FileTypes;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
+import com.xunkal1.termux.shared.errors.Error;
+import com.xunkal1.termux.shared.file.filesystem.FileTypes;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.file.FileUtils;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
 
 import org.apache.commons.io.filefilter.TrueFileFilter;
 

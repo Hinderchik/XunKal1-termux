@@ -1,4 +1,4 @@
-package com.termux.shared.termux.shell.command.runner.terminal;
+package com.xunkal1.termux.shared.termux.shell.command.runner.terminal;
 
 import android.content.Context;
 import android.system.OsConstants;
@@ -7,17 +7,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.common.base.Joiner;
-import com.termux.shared.R;
-import com.termux.shared.shell.command.ExecutionCommand;
-import com.termux.shared.shell.command.environment.ShellEnvironmentUtils;
-import com.termux.shared.shell.command.environment.UnixShellEnvironment;
-import com.termux.shared.shell.command.result.ResultData;
-import com.termux.shared.errors.Errno;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.shell.command.environment.IShellEnvironment;
-import com.termux.shared.shell.ShellUtils;
-import com.termux.terminal.TerminalSession;
-import com.termux.terminal.TerminalSessionClient;
+import com.xunkal1.termux.shared.R;
+import com.xunkal1.termux.shared.shell.command.ExecutionCommand;
+import com.xunkal1.termux.shared.shell.command.environment.ShellEnvironmentUtils;
+import com.xunkal1.termux.shared.shell.command.environment.UnixShellEnvironment;
+import com.xunkal1.termux.shared.shell.command.result.ResultData;
+import com.xunkal1.termux.shared.errors.Errno;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.shell.command.environment.IShellEnvironment;
+import com.xunkal1.termux.shared.shell.ShellUtils;
+import com.xunkal1.termux.terminal.TerminalSession;
+import com.xunkal1.termux.terminal.TerminalSessionClient;
 
 import java.io.File;
 import java.util.Collections;

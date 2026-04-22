@@ -1,4 +1,4 @@
-package com.termux.app.terminal;
+package com.xunkal1.termux.app.terminal;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -17,32 +17,32 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.termux.R;
-import com.termux.app.TermuxActivity;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.interact.MessageDialogUtils;
-import com.termux.shared.interact.ShareUtils;
-import com.termux.shared.shell.ShellUtils;
-import com.termux.shared.termux.TermuxBootstrap;
-import com.termux.shared.termux.terminal.TermuxTerminalViewClientBase;
-import com.termux.shared.termux.extrakeys.SpecialButton;
-import com.termux.shared.android.AndroidUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.activities.ReportActivity;
-import com.termux.shared.models.ReportInfo;
-import com.termux.app.models.UserAction;
-import com.termux.app.terminal.io.KeyboardShortcut;
-import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.termux.TermuxUtils;
-import com.termux.shared.termux.data.TermuxUrlUtils;
-import com.termux.shared.view.KeyboardUtils;
-import com.termux.shared.view.ViewUtils;
-import com.termux.terminal.KeyHandler;
-import com.termux.terminal.TerminalEmulator;
-import com.termux.terminal.TerminalSession;
+import com.xunkal1.termux.R;
+import com.xunkal1.termux.app.TermuxActivity;
+import com.xunkal1.termux.shared.file.FileUtils;
+import com.xunkal1.termux.shared.interact.MessageDialogUtils;
+import com.xunkal1.termux.shared.interact.ShareUtils;
+import com.xunkal1.termux.shared.shell.ShellUtils;
+import com.xunkal1.termux.shared.termux.TermuxBootstrap;
+import com.xunkal1.termux.shared.termux.terminal.TermuxTerminalViewClientBase;
+import com.xunkal1.termux.shared.termux.extrakeys.SpecialButton;
+import com.xunkal1.termux.shared.android.AndroidUtils;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.activities.ReportActivity;
+import com.xunkal1.termux.shared.models.ReportInfo;
+import com.xunkal1.termux.app.models.UserAction;
+import com.xunkal1.termux.app.terminal.io.KeyboardShortcut;
+import com.xunkal1.termux.shared.termux.settings.properties.TermuxPropertyConstants;
+import com.xunkal1.termux.shared.data.DataUtils;
+import com.xunkal1.termux.shared.logger.Logger;
+import com.xunkal1.termux.shared.markdown.MarkdownUtils;
+import com.xunkal1.termux.shared.termux.TermuxUtils;
+import com.xunkal1.termux.shared.termux.data.TermuxUrlUtils;
+import com.xunkal1.termux.shared.view.KeyboardUtils;
+import com.xunkal1.termux.shared.view.ViewUtils;
+import com.xunkal1.termux.terminal.KeyHandler;
+import com.xunkal1.termux.terminal.TerminalEmulator;
+import com.xunkal1.termux.terminal.TerminalSession;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -152,7 +152,7 @@ public class TermuxTerminalViewClient extends TermuxTerminalViewClientBase {
     }
 
     /**
-     * Should be called when {@link com.termux.view.TerminalView#mEmulator} is set
+     * Should be called when {@link com.xunkal1.termux.view.TerminalView#mEmulator} is set
      */
     @Override
     public void onEmulatorSet() {
@@ -735,8 +735,8 @@ public class TermuxTerminalViewClient extends TermuxTerminalViewClientBase {
 
         MessageDialogUtils.showMessage(mActivity, TermuxConstants.TERMUX_APP_NAME + " Report Issue",
             mActivity.getString(R.string.msg_add_termux_debug_info),
-            mActivity.getString(com.termux.shared.R.string.action_yes), (dialog, which) -> reportIssueFromTranscript(transcriptText, true),
-            mActivity.getString(com.termux.shared.R.string.action_no), (dialog, which) -> reportIssueFromTranscript(transcriptText, false),
+            mActivity.getString(com.xunkal1.termux.shared.R.string.action_yes), (dialog, which) -> reportIssueFromTranscript(transcriptText, true),
+            mActivity.getString(com.xunkal1.termux.shared.R.string.action_no), (dialog, which) -> reportIssueFromTranscript(transcriptText, false),
             null);
     }
 

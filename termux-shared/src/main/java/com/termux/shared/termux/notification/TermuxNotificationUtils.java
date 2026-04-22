@@ -1,4 +1,4 @@
-package com.termux.shared.termux.notification;
+package com.xunkal1.termux.shared.termux.notification;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -8,12 +8,12 @@ import android.os.Build;
 
 import androidx.annotation.Nullable;
 
-import com.termux.shared.R;
-import com.termux.shared.android.resource.ResourceUtils;
-import com.termux.shared.notification.NotificationUtils;
-import com.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
-import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants;
-import com.termux.shared.termux.TermuxConstants;
+import com.xunkal1.termux.shared.R;
+import com.xunkal1.termux.shared.android.resource.ResourceUtils;
+import com.xunkal1.termux.shared.notification.NotificationUtils;
+import com.xunkal1.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
+import com.xunkal1.termux.shared.termux.settings.preferences.TermuxPreferenceConstants;
+import com.xunkal1.termux.shared.termux.TermuxConstants;
 
 public class TermuxNotificationUtils {
     /**

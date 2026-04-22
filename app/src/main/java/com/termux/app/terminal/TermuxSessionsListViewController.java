@@ -1,4 +1,4 @@
-package com.termux.app.terminal;
+package com.xunkal1.termux.app.terminal;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -18,12 +18,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
-import com.termux.R;
-import com.termux.app.TermuxActivity;
-import com.termux.shared.termux.shell.command.runner.terminal.TermuxSession;
-import com.termux.shared.theme.NightMode;
-import com.termux.shared.theme.ThemeUtils;
-import com.termux.terminal.TerminalSession;
+import com.xunkal1.termux.R;
+import com.xunkal1.termux.app.TermuxActivity;
+import com.xunkal1.termux.shared.termux.shell.command.runner.terminal.TermuxSession;
+import com.xunkal1.termux.shared.theme.NightMode;
+import com.xunkal1.termux.shared.theme.ThemeUtils;
+import com.xunkal1.termux.terminal.TerminalSession;
 
 import java.util.List;
 
